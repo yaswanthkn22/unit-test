@@ -8,7 +8,7 @@ req_result = {'Rising Pune Supergiants': 30, 'Mumbai Indians': 26,
 def get_match_id():
     """Returns the match id's of 2016 year"""
     ids = set()
-    with open('data/mock_matches.csv',encoding='utf-8') as csv_file:
+    with open('unit-testing/data/mock_matches.csv',encoding='utf-8') as csv_file:
         csv_reader = csv.DictReader(csv_file)
 
         for row in csv_reader:
@@ -23,7 +23,7 @@ def extras_eachteam():
     eachteam_extras = {}
 
     ids = get_match_id()
-    with open('data/mock_deliveries.csv',encoding='utf-8') as csv_file:
+    with open('unit-testing/data/mock_deliveries.csv',encoding='utf-8') as csv_file:
 
         csv_reader = csv.DictReader(csv_file)
 

@@ -13,7 +13,7 @@ def matches_won_eachyear_eachteam():
 
     season_teams_wins = {}
 
-    with open('data/mock_matches.csv',encoding='utf-8') as csv_file:
+    with open('unit-testing/data/mock_matches.csv',encoding='utf-8') as csv_file:
 
         csv_reader = csv.DictReader(csv_file)
 

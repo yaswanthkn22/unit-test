@@ -13,7 +13,7 @@ def economical_bowlers():
     """Doc"""
 
     bowler_economy = {}
-    with open('data/mock_deliveries.csv',encoding='utf-8') as csv_file:
+    with open('unit-testing/data/mock_deliveries.csv',encoding='utf-8') as csv_file:
 
         csv_reader = csv.DictReader(csv_file)
 

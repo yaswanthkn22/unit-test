@@ -21,7 +21,7 @@ class Testipl(unittest.TestCase):
         self.assertDictEqual(result, result_req)
 
     def test_extras_eachteam(self):
-        """ Doc"""
+        """Doc"""
         result = extras_perteam.extras_eachteam()
         req_result = extras_perteam.req_result
         self.assertDictEqual(result,req_result)
